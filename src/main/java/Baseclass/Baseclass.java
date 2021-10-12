@@ -13,6 +13,8 @@ public class Baseclass {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static FileInputStream fis;
+	
+	
 	public Baseclass(){
 	prop=new Properties();
 	

@@ -78,8 +78,8 @@ public class Javascriptdemo {
 		 driver.navigate().to("https://en-gb.facebook.com/r.php?locale=en_GB&display=page");
 		 js.executeScript("alert('Now we are Highlight and Border the objects');");
 		 Thread.sleep(3000); 
-		 Alert alt1 = driver.switchTo().alert();
-		 alt1.accept();
+		 Alert alt3 = driver.switchTo().alert();
+		 alt3.accept();
 		
 		 
 		 WebElement fname= driver.findElement(By.name("firstname")); 
