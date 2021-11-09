@@ -46,6 +46,6 @@ public class ExcelReader extends Baseclass{
 			int column=workbook.getSheetAt(sheetindex).getRow(0).getLastCellNum();
 			return column;
 		}
-		
 
+	
 }

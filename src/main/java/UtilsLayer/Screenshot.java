@@ -12,8 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import Baseclass.Baseclass;
 
 public class Screenshot extends Baseclass{
-
-	public static String getScrensotofTC(String screenShotName){
+	public String PassedScreenshot (String screenShotName){
 	String dateName=new SimpleDateFormat("_ddMMyyyy_HHmmss").format(new Date());
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	File source = ts.getScreenshotAs(OutputType.FILE);
@@ -26,7 +25,21 @@ public class Screenshot extends Baseclass{
 	}
 	return Dist;
 }
+	public String FailedScreenshot(String screenShotName){
+		String dateName=new SimpleDateFormat("_ddMMyyyy_HHmmss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String Dist=System.getProperty("user.dir")+"/ScreenShot/"+screenShotName+dateName+".png";
+		File finalDist = new File(Dist);
+		try {
+			FileUtils.copyFile(source, finalDist);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return Dist;
+}
 
+	
 
 
 }

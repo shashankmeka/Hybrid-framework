@@ -39,7 +39,6 @@ public class JSmethodTest extends Baseclass{
 	public void tearDown() throws InterruptedException {
 		
 		System.out.println("Loginpage test done");
-		Screenshot.getScrensotofTC("sreenshot");
 		Thread.sleep(3000);
 		driver.close();
 }

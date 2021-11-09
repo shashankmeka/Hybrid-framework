@@ -25,7 +25,6 @@ public class myinfopagetest extends Baseclass{
 		loginpage.typeUsername(prop.getProperty("username"));
 		loginpage.typePassword(prop.getProperty("password"));
 		loginpage.clickOnLoginButton();
-		Thread.sleep(5000);
 	}
 	
 	@Test(priority=2)

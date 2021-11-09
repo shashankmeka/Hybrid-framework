@@ -13,8 +13,11 @@ public static JavascriptExecutor js;
 	}
 
 	public static void alertPop() {
-		js.executeScript("alert('User is on Home Page');");
+		js.executeScript("alert('Welcome');");
 	}
+//	public void alertPop(String message) {
+//		js.executeScript("alert('"+message+"');");
+//	}
 
 	public static void sendData(String data, WebElement wb) {
 		js.executeScript("arguments[0].value='" + data + "';", wb);
@@ -47,6 +50,7 @@ public static JavascriptExecutor js;
 
 	public static void refreshPage() {
 		js.executeScript("history.go(0);");
-	}	
+	}
+
 
 }

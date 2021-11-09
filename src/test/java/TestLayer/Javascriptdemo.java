@@ -2,7 +2,6 @@ package TestLayer;
 
 import java.io.File;
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -19,6 +18,7 @@ import org.testng.annotations.Test;
 public class Javascriptdemo {
 	JavascriptExecutor js;
 	WebDriver driver;
+	
 	@BeforeClass
 	public void setup() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "D:\\Selenium videos\\setup\\chromedriver.exe");
@@ -76,10 +76,6 @@ public class Javascriptdemo {
 	@Test(priority=2)
 	public void m2() throws InterruptedException {
 		 driver.navigate().to("https://en-gb.facebook.com/r.php?locale=en_GB&display=page");
-		 js.executeScript("alert('Now we are Highlight and Border the objects');");
-		 Thread.sleep(3000); 
-		 Alert alt3 = driver.switchTo().alert();
-		 alt3.accept();
 		
 		 
 		 WebElement fname= driver.findElement(By.name("firstname")); 

@@ -30,7 +30,7 @@ public class Baseclass {
 
 }
 public static void initialization() {
-	System.setProperty("webdriver.chrome.driver", "D:\\Selenium videos\\setup\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\eclipse-workspace\\javaprogram\\driver\\chromedriver.exe");
 	driver = new ChromeDriver();
 	//driver.manage().window().maximize();
 	driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
